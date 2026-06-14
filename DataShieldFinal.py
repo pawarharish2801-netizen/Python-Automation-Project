@@ -12,7 +12,7 @@ import zipfile
 ## Output        : zip_name (name of created zip file)
 ## Description   : Used to create a zip archive of the given folder with timestamp
 ## Author        : Harish Mahendra Pawar
-## Date          : 12/12/2026
+## Date          : 12/12/2025
 def creat_zip(folder):
     timestamp = time.strftime("%Y-%m%d_%H-%M-%S")
 
@@ -37,7 +37,7 @@ def creat_zip(folder):
 ## Output        : MD5 hash string of the file
 ## Description   : Used to calculate MD5 hash of a file for integrity comparison
 ## Author        : Harish Mahendra Pawar
-## Date          : 12/12/2026
+## Date          : 12/12/2025
 def calculate_hash(path):
     hobj = hashlib.md5()
     
@@ -58,7 +58,7 @@ def calculate_hash(path):
 ## Output        : copied_files (list of newly copied or updated files)
 ## Description   : Used to backup new and updated files from source to destination
 ## Author        : Harish Mahendra Pawar
-## Date          : 12/12/2026
+## Date          : 12/12/2025
 def BackupFiles(Source, Destination):
 
     copied_files = []
@@ -87,7 +87,7 @@ def BackupFiles(Source, Destination):
 ## Output        : Nothing
 ## Description   : Used to start backup process, copy files and create zip archive
 ## Author        : Harish Mahendra Pawar
-## Date          : 12/12/2026
+## Date          : 12/12/2025
 def MarvellousDataShieldStart(Source = "Data"):
     Border = "*"*60
     BackupName = "HaribhauBackup"
@@ -111,7 +111,7 @@ def MarvellousDataShieldStart(Source = "Data"):
 ## Output        : Nothing
 ## Description   : Used to handle command line options and schedule periodic backup
 ## Author        : Harish Mahendra Pawar
-## Date          : 12/12/2026
+## Date          : 12/12/2025
 def main():
 
     Border = "-"* 60
