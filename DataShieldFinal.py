@@ -88,7 +88,7 @@ def BackupFiles(Source, Destination):
 ## Description   : Used to start backup process, copy files and create zip archive
 ## Author        : Harish Mahendra Pawar
 ## Date          : 12/12/2025
-def MarvellousDataShieldStart(Source = "Data"):
+def HarisShieldStart(Source = "Data"):
     Border = "*"*60
     BackupName = "HaribhauBackup"
 
@@ -116,7 +116,7 @@ def main():
 
     Border = "-"* 60
     print(Border)
-    print("----------------- Haribhau Data Shield System --------------")
+    print("----------------- Hari's Data Shield System --------------")
     print(Border)
 
     if(len(sys.argv) == 2):
