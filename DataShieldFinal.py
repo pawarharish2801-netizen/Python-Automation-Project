@@ -82,15 +82,15 @@ def BackupFiles(Source, Destination):
                 copied_files.append(relative)
     return copied_files
 
-##Function Name : MarvellousDataShieldStart
+##Function Name : HarisDataShieldStart
 ## Input         : Source (source directory, default "Data")
 ## Output        : Nothing
 ## Description   : Used to start backup process, copy files and create zip archive
 ## Author        : Harish Mahendra Pawar
 ## Date          : 12/12/2025
-def HarisShieldStart(Source = "Data"):
+def HarisDataShieldStart(Source = "Data"):
     Border = "*"*60
-    BackupName = "HaribhauBackup"
+    BackupName = "HarisDataShieldBackup"
 
     print(f"{Fore.GREEN}Success : {Style.RESET_ALL}",end=" ")
     print("Backup Process Started Successfully at :",time.ctime())
@@ -140,7 +140,7 @@ def main():
     elif (len(sys.argv)==3 ):
         
         #Apply the Scheduler
-        schedule.every(int(sys.argv[1])).minutes.do(MarvellousDataShieldStart, sys.argv[2])
+        schedule.every(int(sys.argv[1])).minutes.do(HarisDataShieldStart, sys.argv[2])
 
         print(f"{Fore.GREEN}Success : {Style.RESET_ALL}",end=" ")
         print("Data Shield System Started Successfully ....")
